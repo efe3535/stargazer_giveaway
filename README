@@ -1,6 +1,7 @@
 An example output:
 
 $ python3 main.py
+tip:    you can always use arguments like "--uname --reponame --u --r -u -r"
 Author of the repo?    torvalds
 Name of the repo?    linux
 
