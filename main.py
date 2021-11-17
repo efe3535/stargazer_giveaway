@@ -43,7 +43,9 @@ if(uname == "" and reponame == ""):
     print("You should pass an username and a reponame.")
     exit(1)
 
-x = requests.get(f"https://api.github.com/repos/{uname}/{reponame}/stargazers") # to be continued :]
+# https://api.github.com/repositories/45717250/stargazers?per_page=100&page=400
+
+x = requests.get(f"https://api.github.com/repos/{uname}/{reponame}/stargazers?per_page=100&page=400") # to be continued :]
 y = requests.get(f"https://api.github.com/repos/{uname}/{reponame}"); 
 
 if(y.status_code != 404):
@@ -57,6 +59,7 @@ if x.status_code != 404 and stargazers_count > 1:
      
     luckyone = choice(stargazer_names)
 
+    print(len(stargazer_names))
     print("Luckiest person ever is:\t", Fore.GREEN, luckyone, Fore.RESET)
     print("GitHub link of this lucky person:\t",Fore.BLUE, f"https://github.com/{luckyone}", Fore.RESET)
 
