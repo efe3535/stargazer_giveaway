@@ -1,4 +1,4 @@
-DEPRECATED.
+# DEPRECATED
 reason: Exceeds ratelimit in bigger repositories.
 ![Deprecated](deprecatereason.png)
 
